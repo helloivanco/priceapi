@@ -42,7 +42,7 @@ async function handler(req, res) {
 
   const price = await gecko_price(id);
   // Rest of the API logic
-  res.json({ price: `${price}` });
+  res.json({ price: `$${price}` });
 }
 
 export default handler;
