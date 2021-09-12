@@ -31,7 +31,7 @@ async function gecko_price(crypto_id) {
 
   // return the first (should be only) price from data
   // extract the value in the dictionary with a key of 'price_usd'
-  return Math.round(res.data[crypto_id]['usd'], 3);
+  return res.data[crypto_id]['usd'];
 }
 
 async function handler(req, res) {
