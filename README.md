@@ -18,7 +18,7 @@ To get the price in a cell use
 =priceapi("COINGECKO_COIN_ID")
 ```
 
-# Image
+## Image
 
 In a cell use
 (change YOURAPIURL with your deployed url)
@@ -26,7 +26,7 @@ In a cell use
 =image("https://YOURAPIURL/api/image/COINGECKO_COIN_ID")
 ```
 
-# Deploy on Vercel
+## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
