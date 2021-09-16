@@ -1,3 +1,33 @@
+# Takes data from Coingecko for use in Google Sheets
+
+## Price Data
+Paste this into the Tools >> Script Editor
+```
+function priceapi(crypto_id){
+  var full_url = 'https://YOURAPIURL/api/'+ crypto_id;
+  var response = UrlFetchApp.fetch(full_url);
+  var data = JSON.parse(response.getContentText());
+  return data['price'];
+}
+
+```
+Then to get the price in a cell use
+
+```
+=priceapi("COINGECKO_COIN_ID")
+```
+
+# Image
+
+In a cell use
+
+```
+=image("https://priceapi.vercel.app/api/image/COINGECKO_COIN_ID")
+```
+
+# Next.js -- Deploy on Vercel
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
