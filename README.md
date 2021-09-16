@@ -2,7 +2,7 @@
 
 ## Price Data
 Paste this into the Tools >> Script Editor
-(change YOURAPIURL with your deployed url)
+(replace YOURAPIURL with your deployed url)
 ```
 function priceapi(crypto_id){
   var full_url = 'https://YOURAPIURL/api/'+ crypto_id;
@@ -12,7 +12,7 @@ function priceapi(crypto_id){
 }
 
 ```
-To get the price in a cell use
+To get the price in a cell (replace "COINGECKO_COIN_ID" with "Bitcoin", etc.)
 
 ```
 =priceapi("COINGECKO_COIN_ID")
@@ -21,7 +21,7 @@ To get the price in a cell use
 ## Image
 
 In a cell use
-(change YOURAPIURL with your deployed url)
+(replace YOURAPIURL with your deployed url)
 ```
 =image("https://YOURAPIURL/api/image/COINGECKO_COIN_ID")
 ```
