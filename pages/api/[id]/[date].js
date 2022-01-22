@@ -41,7 +41,11 @@ async function handler(req, res) {
 
   let price = await gecko_history(id, formattedDate);
   // Rest of the API logic
-  res.json({ price: `$${price}`, formattedDate: `${formattedDate}` });
+  res.json({
+    price: `$${price}`,
+    formattedDate: `${formattedDate}`,
+    date: `${date}`,
+  });
 }
 
 export default handler;
